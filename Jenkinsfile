@@ -9,17 +9,17 @@ pipeline {
             }
             stage('Build') {
                   steps {
-                        println "Building Sample Maven Project"execute()
+                        println "Building Sample Maven Project".execute()
                   }
             }
             stage('Deploy') {
                   steps {
-                        println "Deploying in Staging Area"execute()
+                        println "Deploying in Staging Area".execute()
                   }
             }
             stage('Deploy Production') {
                   steps {
-                        println "Deploying in Production Area"execute()
+                        println "Deploying in Production Area".execute()
                   }
             }
       }
